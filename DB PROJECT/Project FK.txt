@@ -1,0 +1,30 @@
+#1
+alter table player add constraint plr_fk foreign key (a_id) references location(a_id)
+
+alter table player add constraint plr1_fk foreign key (c_id) references coach(c_id)
+
+#6
+alter table player_identity add constraint pi_fk foreign key (p_id) references player(p_id)
+
+alter table player_identity add constraint pi1_fk foreign key (mmbrship_id) references player_details(mmbrship_id)
+
+#7
+alter table trainer add constraint trn_fk foreign key (a_id) references location(a_id)
+
+alter table trainer add constraint trn1_fk foreign key (ps_id) references physician(ps_id)
+
+#10
+alter table player_service add constraint ps_fk foreign key (a_id) references location(a_id)
+
+alter table player_service add constraint dr_fk foreign key (d_id) references doctor(d_id)
+
+#12
+alter table play add constraint pl_fk foreign key (a_id) references location(a_id)
+
+alter table play add constraint pl1_fk foreign key (cl_id) references club(cl_id)
+
+#14
+alter table match add constraint m_fk foreign key (cl_id) references club(cl_id)
+
+#15
+alter table equipment add constraint e_fk foreign key (cl_id) references club(cl_id)

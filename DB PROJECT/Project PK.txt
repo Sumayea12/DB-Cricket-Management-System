@@ -1,0 +1,29 @@
+1.	alter table player add constraint plr_pk primary key(p_id)
+
+2.	alter table location add constraint l_pk primary key(a_id)
+
+3.	alter table coach add constraint c_pk primary key(c_id)
+
+4.	alter table qualification add constraint q_pk primary key(c_id,c_skill)
+
+5.	alter table player_details add constraint mid_pk primary key(mmbrship_id)
+
+6.	alter table player_identity add constraint pi_pk primary key(n_id)
+
+7.	alter table trainer add constraint tr_pk primary key(p_id)
+
+8.	alter table physician add constraint phy_pk primary key(ps_id)
+
+9.	alter table p_quality add constraint pq_pk primary key(ps_id,ps_exprience)
+
+10.	alter table Player_Service add constraint ps_pk primary key(p_id)
+
+11.	alter table doctor add constraint d_pk primary key(d_id)
+
+12.	alter table play add constraint pl_pk primary key(p_id)
+
+13.	alter table club add constraint cl_pk primary key(cl_id)
+
+14.	alter table match add constraint m_pk primary key(m_no)
+
+15.	alter table eqipment add constraint eq_pk primary key(e_id)

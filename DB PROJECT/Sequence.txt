@@ -1,0 +1,28 @@
+~~~~~~~~~~Player~~~~~~~~~~~
+create sequence player_seq
+start with 1000 
+increment by 1
+maxvalue 10000
+cycle
+nocache
+
+#Player table Insertation
+insert  into player(p_id,p_age,p_name,a_id,c_id) values(tf_seq.nextval,21,'SACHCHA',101,555)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~Equipment~~~~~~~~~~~
+create sequence equipment_seq
+start with 100 
+increment by 1
+maxvalue 1000
+nominvalue
+nocycle
+nocache
+
+#insert
+insert  into equipment(e_code,e_name,e_type) values(equipment_seq.nextval,'Bat','Practice')
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+

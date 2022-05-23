@@ -1,0 +1,11 @@
+#Check
+alter table equipment add constraint equi check (e_type='Practice' or e_type='practice' or e_type='Regular' or e_type='regular')
+
+#not null
+alter table player modify (p_name not null)
+
+
+~~~~~~~~~Details~~~~~~~~~~
+select *
+from all_constraints
+where table_name = 'PLAYER'
